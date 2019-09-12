@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  test:
+    docker:
+      - image: node:10
+    steps:
+      - checkout
+      - run: npm ci
+      - run:
+          name: Lint
+          command: npm run lint
+      - run:
+          name: Test
+          command: npm test
+
+workflows:
+  version: 2
+  test_and_build:
+    jobs:
+      - test
