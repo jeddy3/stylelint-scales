@@ -1,4 +1,4 @@
-name: Node CI
+name: node-ci
 
 on: [push]
 
@@ -8,19 +8,21 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node_version: [8, 10, 12]
+        node-version: [8.x, 10.x, 12.x]
         os: [ubuntu-latest, windows-latest, macos-latest]
 
     steps:
-    - uses: actions/checkout@v1
+      - uses: actions/checkout@v1
 
-    - name: Use Node.js ${{ matrix.node_version }}
-      uses: actions/setup-node@v1
-      with:
-        version: ${{ matrix.node_version }}
-    
-    - name: npm install, build and test
-      run: |
-        npm install
-        npm run lint
-        npm test
+      - name: Use Node.js ${{ matrix.node_version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node_version }}
+
+      - name: npm install, build and test
+        run: |
+          npm ci
+          npm run lint
+          npm test
+        env:
+          CI: true
