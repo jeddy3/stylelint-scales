@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         node: [8, 10, 12]
-        os: [ubuntu-latest, windows-latest]
+        os: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v1
@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
-      - name: npm install, build and test
+      - name: npm install, lint and test
         run: |
           npm install
           npm run lint
