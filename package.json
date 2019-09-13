@@ -12,6 +12,18 @@
   "bugs": {
     "url": "https://github.com/signal-noise/stylelint-scales/issues"
   },
+  "keywords": [
+    "css",
+    "less",
+    "sass",
+    "scss",
+    "stylelint",
+    "stylelint-plugin",
+    "spacing",
+    "scales",
+    "font",
+    "linting"
+  ],
   "scripts": {
     "test": "jest",
     "lint": "npm-run-all --parallel lint:*",
