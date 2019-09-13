@@ -1,0 +1,28 @@
+name: node-ci
+
+on: [push]
+
+jobs:
+  test:
+    name: Test on node ${{ matrix.node }} and ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node: [8, 10, 12]
+        os: [ubuntu-latest]
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Use Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: npm install, lint and test
+        run: |
+          npm install
+          npm run lint
+          npm test
+        env:
+          CI: true

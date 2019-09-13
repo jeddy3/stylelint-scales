@@ -8,11 +8,11 @@
   "scripts": {
     "test": "jest",
     "lint": "npm-run-all --parallel lint:*",
-    "lint:eslint": "eslint '**/*.js'",
-    "lint:prettier": "prettier '**/*.{js,md}' --check",
+    "lint:eslint": "eslint \"**/*.js\"",
+    "lint:prettier": "prettier \"**/*.{js,md}\" --check",
     "fix": "npm-run-all --sequential fix:*",
-    "fix:eslint": "eslint '**/*.js' --fix",
-    "fix:prettier": "prettier '**/*.{js,md} --write"
+    "fix:eslint": "eslint \"**/*.js\" --fix",
+    "fix:prettier": "prettier \"**/*.{js,md}\" --write"
   },
   "dependencies": {
     "lodash": "^4.17.15",
