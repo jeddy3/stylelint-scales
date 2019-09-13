@@ -1,6 +1,5 @@
 {
-  "name": "stylelint-scales",
-  "private": true,
+  "name": "@signal-noise/stylelint-scales",
   "description": "A plugin pack to enforce scales within stylelint",
   "version": "0.1.0",
   "license": "MIT",
