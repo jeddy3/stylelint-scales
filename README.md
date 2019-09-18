@@ -38,6 +38,8 @@ Like so:
 
 Ref: [Styled System Keys Reference](https://styled-system.com/theme-specification#key-reference)
 
+You and the designers should define the scales together. You'll want to strike a balance between code consistency and design flexibility.
+
 # Why?
 
 This plugin can help you create:
