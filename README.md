@@ -19,9 +19,7 @@ Like so:
 ```js
 // .stylelintrc
 {
-	"plugins": [
-		"stylelint-scales"
-	],
+	"plugins": ["@signal-noise/stylelint-scales"],
 	"rules": {
 		"scales/font-size": [1, 1.5, 2],
 	}
