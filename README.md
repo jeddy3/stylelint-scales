@@ -43,7 +43,7 @@ Ref: [Styled System Keys Reference](https://styled-system.com/theme-specificatio
 This plugin can help you create:
 
 - a consistent look and feel for your apps
-- efficient collaboration you and the designers
+- efficient collaboration between you and the designers
 
 When designers review apps in the browser they generally use relative terms. For example, "The space between that heading and that paragraph feels too tight, can we make it bigger?"
 
