@@ -10,7 +10,7 @@ a {
  *        This size */
 ```
 
-This rule defaults to checking `rem` units.
+This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-relative-lengths) and [absolute](https://drafts.csswg.org/css-values-4/#absolute-lengths) lengths.
 
 ## Options
 
@@ -30,25 +30,9 @@ a {
 }
 ```
 
-The following patterns are _not_ considered violations:
-
 ```css
 a {
-  margin: 1rem;
-}
-```
-
-## Optional secondary options
-
-### `unit: string` (default: `"rem"`)
-
-For example with `"px"`:
-
-The following patterns are considered violations:
-
-```css
-a {
-  margin: 3px;
+  grid-gap: 2px;
 }
 ```
 
@@ -62,6 +46,6 @@ a {
 
 ```css
 a {
-  margin: 3rem;
+  grid-gap: 1px;
 }
 ```
