@@ -7,7 +7,7 @@ A plugin pack of scale related linting rules for [stylelint](https://stylelint.i
 ## Installation
 
 ```
-npm install stylelint-scales --save-dev
+npm install @signal-noise/stylelint-scales --save-dev
 ```
 
 ## Usage
