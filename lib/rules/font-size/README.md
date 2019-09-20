@@ -10,7 +10,7 @@ a {
  *           This size */
 ```
 
-This rule defaults to checking `rem` units.
+This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-relative-lengths) and [absolute](https://drafts.csswg.org/css-values-4/#absolute-lengths) lengths.
 
 ## Options
 
@@ -32,7 +32,7 @@ a {
 
 ```css
 a {
-  font: 2rem/1 serif;
+  font: 2px/1 serif;
 }
 ```
 
@@ -46,34 +46,6 @@ a {
 
 ```css
 a {
-  font: 1.5rem/1 serif;
-}
-```
-
-## Optional secondary options
-
-### `unit: string` (default: `"rem"`)
-
-For example with `"px"`:
-
-The following patterns are considered violations:
-
-```css
-a {
-  font-size: 3px;
-}
-```
-
-The following patterns are _not_ considered violations:
-
-```css
-a {
-  font-size: 1rem;
-}
-```
-
-```css
-a {
-  font-size: 3rem;
+  font: 1.5px/1 serif;
 }
 ```
