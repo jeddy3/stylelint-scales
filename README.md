@@ -7,7 +7,7 @@ A plugin pack of scale related linting rules for [stylelint](https://stylelint.i
 ## Installation
 
 ```
-npm install stylelint-scales --save-dev
+npm install @signal-noise/stylelint-scales --save-dev
 ```
 
 ## Usage
@@ -19,10 +19,10 @@ Like so:
 ```js
 // .stylelintrc
 {
-	"plugins": ["@signal-noise/stylelint-scales"],
-	"rules": {
-		"scales/font-size": [1, 1.5, 2],
-	}
+  "plugins": ["@signal-noise/stylelint-scales"],
+  "rules": {
+    "scales/font-size": [1, 1.5, 2],
+  }
 }
 ```
 
