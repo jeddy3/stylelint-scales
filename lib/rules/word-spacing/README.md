@@ -1,10 +1,10 @@
-# letter-spacing
+# word-spacing
 
-Specify a scale for letter-spacing.
+Specify a scale for word-spacing.
 
 ```css
 a {
-  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
 }
 /**               ↑
  *                This size */
@@ -26,7 +26,7 @@ The following patterns are considered violations:
 
 ```css
 a {
-  letter-spacing: 0.5rem;
+  word-spacing: 0.5rem;
 }
 ```
 
@@ -34,6 +34,6 @@ The following patterns are _not_ considered violations:
 
 ```css
 a {
-  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
 }
 ```
