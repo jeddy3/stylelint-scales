@@ -33,6 +33,7 @@ Like so:
 - [`font-weight`](./lib/rules/font-weight/README.md): Specify a scale for font-weight.
 - [`letter-spacing`](./lib/rules/letter-spacing/README.md): Specify a scale for letter-spacing.
 - [`line-height`](./lib/rules/line-height/README.md): Specify a scale for line-height.
+- [`radii`](./lib/rules/radii/README.md): Specify a scale for radii.
 - [`space`](./lib/rules/space/README.md): Specify a scale for space.
 
 Ref: [Styled System Keys Reference](https://styled-system.com/theme-specification#key-reference)

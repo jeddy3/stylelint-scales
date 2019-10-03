@@ -1,13 +1,13 @@
-# font-size
+# radii
 
-Specify a scale for letter-spacing.
+Specify a scale for radii.
 
 ```css
 a {
-  letter-spacing: 0.1rem;
+  border-radius: 4px;
 }
-/**               ↑
- *                This size */
+/**              ↑
+ *               This size */
 ```
 
 This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-relative-lengths) and [absolute](https://drafts.csswg.org/css-values-4/#absolute-lengths) lengths.
@@ -19,14 +19,14 @@ This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-rel
 Given:
 
 ```json
-[0.1, 0.2]
+[4, 8]
 ```
 
 The following patterns are considered violations:
 
 ```css
 a {
-  letter-spacing: 0.5rem;
+  border-radius: 2px;
 }
 ```
 
@@ -34,6 +34,6 @@ The following patterns are _not_ considered violations:
 
 ```css
 a {
-  letter-spacing: 0.1rem;
+  border-top-right-radius: 4px;
 }
 ```
