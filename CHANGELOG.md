@@ -1,5 +1,14 @@
 # Changelog
 
+# Unreleased
+
+## Added
+
+- `font-family` rule
+- `letter-spacing` rule
+- `radii` rule
+- `word-spacing` rule
+
 # 1.0.0
 
 ## Removed
