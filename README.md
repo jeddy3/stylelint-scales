@@ -31,6 +31,7 @@ Like so:
 - [`color`](./lib/rules/color/README.md): Specify a scale for color.
 - [`font-size`](./lib/rules/font-size/README.md): Specify a scale for font-size.
 - [`font-weight`](./lib/rules/font-weight/README.md): Specify a scale for font-weight.
+- [`letter-spacing`](./lib/rules/letter-spacing/README.md): Specify a scale for letter-spacing.
 - [`line-height`](./lib/rules/line-height/README.md): Specify a scale for line-height.
 - [`space`](./lib/rules/space/README.md): Specify a scale for space.
 

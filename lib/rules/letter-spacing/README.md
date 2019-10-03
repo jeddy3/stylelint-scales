@@ -1,13 +1,13 @@
 # font-size
 
-Specify a scale for font-sizes.
+Specify a scale for letter-spacing.
 
 ```css
 a {
-  font-size: 1rem;
+  letter-spacing: 0.1rem;
 }
-/**          ↑
- *           This size */
+/**               ↑
+ *                This size */
 ```
 
 This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-relative-lengths) and [absolute](https://drafts.csswg.org/css-values-4/#absolute-lengths) lengths.
@@ -19,20 +19,14 @@ This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-rel
 Given:
 
 ```json
-[1, 1.5]
+[0.1, 0.2]
 ```
 
 The following patterns are considered violations:
 
 ```css
 a {
-  font-size: 2rem;
-}
-```
-
-```css
-a {
-  font: 2px/1 serif;
+  letter-spacing: 0.5rem;
 }
 ```
 
@@ -40,12 +34,6 @@ The following patterns are _not_ considered violations:
 
 ```css
 a {
-  font-size: 1rem;
-}
-```
-
-```css
-a {
-  font: 1.5px/1 serif;
+  letterspacing: 0.1rem;
 }
 ```
