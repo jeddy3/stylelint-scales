@@ -35,6 +35,7 @@ Like so:
 - [`letter-spacing`](./lib/rules/letter-spacing/README.md): Specify a scale for letter-spacing.
 - [`line-height`](./lib/rules/line-height/README.md): Specify a scale for line-height.
 - [`radii`](./lib/rules/radii/README.md): Specify a scale for radii.
+- [`sizes`](./lib/rules/sizes/README.md): Specify a scale for sizes.
 - [`space`](./lib/rules/space/README.md): Specify a scale for space.
 - [`word-spacing`](./lib/rules/word-spacing/README.md): Specify a scale for word-spacing.
 
