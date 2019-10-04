@@ -21,7 +21,9 @@ Like so:
 {
   "plugins": ["@signal-noise/stylelint-scales"],
   "rules": {
-    "scales/font-size": [1, 1.5, 2],
+    "scales/font-size": [[1, 1.5, 2], { unit: "rem" }],
+    "scales/font-weight": [[400, 600]],
+    "scales/radii": [[4, 8, 16], { unit: "px" }]
   }
 }
 ```

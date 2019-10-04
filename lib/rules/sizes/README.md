@@ -55,9 +55,9 @@ a {
 
 ## Optional secondary options
 
-### `units: array`
+### `unit: string`
 
-For example with `["px", "em"]`:
+For example with `"px"`:
 
 The following pattern is considered a violation:
 
@@ -72,11 +72,5 @@ The following patterns are _not_ considered violations:
 ```css
 a {
   min-height: 150px;
-}
-```
-
-```css
-a {
-  max-height: 150em;
 }
 ```
