@@ -10,7 +10,7 @@ a {
  *        This size */
 ```
 
-This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-relative-lengths), [absolute](https://drafts.csswg.org/css-values-4/#absolute-lengths) and [viewport-percentage](https://drafts.csswg.org/css-values-4/#viewport-relative-lengths) lengths.
+This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-relative-lengths), [viewport-percentage](https://drafts.csswg.org/css-values-4/#viewport-relative-lengths) and [absolute](https://drafts.csswg.org/css-values-4/#absolute-lengths) lengths.
 
 ## Options
 
