@@ -1,6 +1,12 @@
 # Changelog
 
-# Unreleased
+# 1.1.1
+
+## Changed
+
+- missing `sizes` documentation link
+
+# 1.1.0
 
 ## Added
 
