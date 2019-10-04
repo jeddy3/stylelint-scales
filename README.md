@@ -29,10 +29,14 @@ Like so:
 ## List of rules
 
 - [`color`](./lib/rules/color/README.md): Specify a scale for color.
+- [`font-family`](./lib/rules/font-family/README.md): Specify a scale for font-family.
 - [`font-size`](./lib/rules/font-size/README.md): Specify a scale for font-size.
 - [`font-weight`](./lib/rules/font-weight/README.md): Specify a scale for font-weight.
+- [`letter-spacing`](./lib/rules/letter-spacing/README.md): Specify a scale for letter-spacing.
 - [`line-height`](./lib/rules/line-height/README.md): Specify a scale for line-height.
+- [`radii`](./lib/rules/radii/README.md): Specify a scale for radii.
 - [`space`](./lib/rules/space/README.md): Specify a scale for space.
+- [`word-spacing`](./lib/rules/word-spacing/README.md): Specify a scale for word-spacing.
 
 Ref: [Styled System Keys Reference](https://styled-system.com/theme-specification#key-reference)
 
