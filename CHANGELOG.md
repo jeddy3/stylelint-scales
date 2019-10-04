@@ -1,5 +1,11 @@
 # Changelog
 
+# Unreleased
+
+## Added
+
+- `sizes` rule
+
 # 1.0.0
 
 ## Removed
