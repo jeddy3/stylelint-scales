@@ -19,7 +19,7 @@ e.g.
 
 ```css
 a {
-  font-size: 11.50em;
+  font-size: 11.5em;
 }
 ```
 
@@ -30,7 +30,7 @@ e.g.
 ```json
 {
   "rules": {
-    "scales/font-size": [10, 11.5, 14],
+    "scales/font-size": [10, 11.5, 14]
   }
 }
 ```
