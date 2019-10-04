@@ -1,13 +1,13 @@
-# space
+# sizes
 
-Specify a scale for space.
+Specify a scale for (min-, max-) width and height.
 
 ```css
 a {
-  margin: 1rem;
+  width: 400px;
 }
-/**       ↑
- *        This size */
+/**      ↑
+ *       This size */
 ```
 
 This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-relative-lengths), [viewport-percentage](https://drafts.csswg.org/css-values-4/#viewport-relative-lengths) and [absolute](https://drafts.csswg.org/css-values-4/#absolute-lengths) lengths.
@@ -19,20 +19,20 @@ This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-rel
 Given:
 
 ```json
-[1, 1.5]
+[100, 150]
 ```
 
 The following patterns are considered violations:
 
 ```css
 a {
-  margin: 2rem;
+  max-width: 125px;
 }
 ```
 
 ```css
 a {
-  grid-gap: 2px;
+  height: 200rem;
 }
 ```
 
@@ -40,12 +40,12 @@ The following patterns are _not_ considered violations:
 
 ```css
 a {
-  margin: 1rem;
+  width: 100vw;
 }
 ```
 
 ```css
 a {
-  grid-gap: 1px;
+  min-height: 150px;
 }
 ```

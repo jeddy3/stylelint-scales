@@ -4,6 +4,7 @@
 
 ## Added
 
+- `sizes` rule
 - `font-family` rule
 - `letter-spacing` rule
 - `radii` rule
