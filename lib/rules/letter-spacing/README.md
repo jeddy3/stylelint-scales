@@ -19,7 +19,10 @@ This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-rel
 Given:
 
 ```json
-[0.1, 0.2]
+{
+  "scale": [0.1, 0.2],
+  "units": ["px", "rem"]
+}
 ```
 
 The following patterns are considered violations:
@@ -35,5 +38,9 @@ The following patterns are _not_ considered violations:
 ```css
 a {
   letter-spacing: 0.1rem;
+}
+
+a {
+  letter-spacing: 0.2px;
 }
 ```
