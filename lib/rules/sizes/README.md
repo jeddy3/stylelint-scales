@@ -19,7 +19,10 @@ This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-rel
 Given:
 
 ```json
-[100, 150]
+{
+  "scale": [100, 150],
+  "units": ["px", "vw"]
+}
 ```
 
 The following patterns are considered violations:
