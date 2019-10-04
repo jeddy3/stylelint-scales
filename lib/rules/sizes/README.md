@@ -52,3 +52,31 @@ a {
   min-height: 150px;
 }
 ```
+
+## Optional secondary options
+
+### `units: array`
+
+For example with `["px", "em"]`:
+
+The following pattern is considered a violation:
+
+```css
+a {
+  width: 100vw;
+}
+```
+
+The following patterns are _not_ considered violations:
+
+```css
+a {
+  min-height: 150px;
+}
+```
+
+```css
+a {
+  max-height: 150em;
+}
+```

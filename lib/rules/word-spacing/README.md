@@ -37,3 +37,31 @@ a {
   word-spacing: 0.1rem;
 }
 ```
+
+## Optional secondary options
+
+### `units: array`
+
+For example with `["px", "em"]`:
+
+The following pattern is considered a violation:
+
+```css
+a {
+  word-spacing: 0.2rem;
+}
+```
+
+The following patterns are _not_ considered violations:
+
+```css
+a {
+  word-spacing: 0.2px;
+}
+```
+
+```css
+a {
+  word-spacing: 0.1em;
+}
+```

@@ -58,3 +58,31 @@ a {
   font: 1.5px/1 serif;
 }
 ```
+
+## Optional secondary options
+
+### `units: array`
+
+For example with `["px", "em"]`:
+
+The following pattern is considered a violation:
+
+```css
+a {
+  font-size: 1rem;
+}
+```
+
+The following patterns are _not_ considered violations:
+
+```css
+a {
+  font-size: 1px;
+}
+```
+
+```css
+a {
+  font-size: 1em;
+}
+```

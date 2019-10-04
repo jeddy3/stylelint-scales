@@ -44,3 +44,31 @@ a {
   letter-spacing: 0.2px;
 }
 ```
+
+## Optional secondary options
+
+### `units: array`
+
+For example with `["px", "em"]`:
+
+The following pattern is considered a violation:
+
+```css
+a {
+  letter-spacing: 0.2rem;
+}
+```
+
+The following patterns are _not_ considered violations:
+
+```css
+a {
+  letter-spacing: 0.2px;
+}
+```
+
+```css
+a {
+  letter-spacing: 0.2em;
+}
+```

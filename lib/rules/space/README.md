@@ -19,20 +19,20 @@ This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-rel
 Given:
 
 ```json
-[1, 1.5]
+[16, 32]
 ```
 
 The following patterns are considered violations:
 
 ```css
 a {
-  margin: 2rem;
+  margin: 48rem;
 }
 ```
 
 ```css
 a {
-  grid-gap: 2px;
+  grid-gap: 128px;
 }
 ```
 
@@ -40,12 +40,40 @@ The following patterns are _not_ considered violations:
 
 ```css
 a {
-  margin: 1rem;
+  margin: 16rem;
 }
 ```
 
 ```css
 a {
-  grid-gap: 1px;
+  grid-gap: 32px;
+}
+```
+
+## Optional secondary options
+
+### `units: array`
+
+For example with `["px", "em"]`:
+
+The following pattern is considered a violation:
+
+```css
+a {
+  margin: 16rem;
+}
+```
+
+The following patterns are _not_ considered violations:
+
+```css
+a {
+  grid-gap: 16px;
+}
+```
+
+```css
+a {
+  padding: 32em;
 }
 ```
