@@ -1,12 +1,15 @@
 # Changelog
 
-# Unreleased
+# 1.2.0
+
+## Added
+
+- `z-indices` rule
+- `border-width` rule
 
 ## Changed
 
 - added `unit` option on unit dependent scales
-- `z-indices` rule
-- `border-width` rule
 
 # 1.1.1
 
