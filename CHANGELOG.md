@@ -1,5 +1,12 @@
 # Changelog
 
+# Unreleased
+
+## Changed
+
+- `z-indices` rule
+- `border-width` rule
+
 # 1.1.1
 
 ## Changed
