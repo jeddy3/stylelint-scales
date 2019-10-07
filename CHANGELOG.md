@@ -4,7 +4,9 @@
 
 ## Changed
 
-- added `unit` option on unit dependant scales
+- added `unit` option on unit dependent scales
+- `z-indices` rule
+- `border-width` rule
 
 # 1.1.1
 
