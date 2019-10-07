@@ -28,6 +28,7 @@ Like so:
 
 ## List of rules
 
+- [`border-width`](./lib/rules/border-width/README.md): Specify a scale for border-width.
 - [`color`](./lib/rules/color/README.md): Specify a scale for color.
 - [`font-family`](./lib/rules/font-family/README.md): Specify a scale for font-family.
 - [`font-size`](./lib/rules/font-size/README.md): Specify a scale for font-size.
@@ -38,6 +39,7 @@ Like so:
 - [`sizes`](./lib/rules/sizes/README.md): Specify a scale for sizes.
 - [`space`](./lib/rules/space/README.md): Specify a scale for space.
 - [`word-spacing`](./lib/rules/word-spacing/README.md): Specify a scale for word-spacing.
+- [`z-indices`](./lib/rules/z-indices/README.md): Specify a scale for z-indices.
 
 Ref: [Styled System Keys Reference](https://styled-system.com/theme-specification#key-reference)
 
