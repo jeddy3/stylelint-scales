@@ -33,6 +33,8 @@
     "release": "np"
   },
   "dependencies": {
+    "camelcase": "^5.3.1",
+    "css-border-property": "^1.1.0",
     "font-family": "^0.2.0",
     "lodash": "^4.17.15",
     "parse-css-font": "^4.0.0",
