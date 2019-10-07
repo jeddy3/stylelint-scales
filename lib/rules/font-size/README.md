@@ -19,7 +19,10 @@ This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-rel
 Given:
 
 ```json
-[1, 1.5]
+{
+  "scale": [1, 1.5],
+  "units": ["px", "rem"]
+}
 ```
 
 The following patterns are considered violations:
@@ -36,6 +39,12 @@ a {
 }
 ```
 
+```css
+a {
+  font-size: 1em;
+}
+```
+
 The following patterns are _not_ considered violations:
 
 ```css
@@ -47,5 +56,27 @@ a {
 ```css
 a {
   font: 1.5px/1 serif;
+}
+```
+
+## Optional secondary options
+
+### `unit: string`
+
+For example with `"px"`:
+
+The following pattern is considered a violation:
+
+```css
+a {
+  font-size: 1rem;
+}
+```
+
+The following patterns are _not_ considered violations:
+
+```css
+a {
+  font-size: 1px;
 }
 ```

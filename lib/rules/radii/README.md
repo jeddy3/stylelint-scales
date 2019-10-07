@@ -37,3 +37,25 @@ a {
   border-top-right-radius: 4px;
 }
 ```
+
+## Optional secondary options
+
+### `unit: string`
+
+For example with `"px"`:
+
+The following pattern is considered a violation:
+
+```css
+a {
+  border-top-right-radius: 4rem;
+}
+```
+
+The following patterns are _not_ considered violations:
+
+```css
+a {
+  border-top-right-radius: 4px;
+}
+```
