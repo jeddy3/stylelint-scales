@@ -1,5 +1,11 @@
 # Changelog
 
+# Unreleased
+
+## Changed
+
+- added `unit` option on unit dependant scales
+
 # 1.1.1
 
 ## Changed
