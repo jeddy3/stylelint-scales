@@ -40,5 +40,6 @@ jobs:
           npm test
       - name: Lint and Test (Unix)
         if: matrix.os != 'windows-latest'
-        run: npm run lint
+        run: |
+          npm run lint
           npm test
