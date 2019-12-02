@@ -2,9 +2,6 @@ name: node-ci
 
 on: [push]
 
-env:
-  CI: true
-
 jobs:
   test:
     name: Test on node ${{ matrix.node-version }} and ${{ matrix.os }}
@@ -37,9 +34,13 @@ jobs:
           cd ..
           cd D:\a\stylelint-scales\stylelint-scales
           npm run lint
-          npm test
+          npm test -- --ci
+        env:
+          CI: true
       - name: Lint and Test (Unix)
         if: matrix.os != 'windows-latest'
         run: |
           npm run lint
-          npm test
+          npm test -- --ci
+        env:
+          CI: true
