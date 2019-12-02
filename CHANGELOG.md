@@ -1,5 +1,11 @@
 # Changelog
 
+# Unreleased
+
+## Changed
+
+- Border width rule no longer checks against `none` value.
+
 # 1.2.0
 
 ## Added
