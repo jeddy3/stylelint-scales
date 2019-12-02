@@ -28,20 +28,19 @@ jobs:
       - name: npm install
         run: |
           npm install
-          npm run lint
 
       # Windows environment currently has random case drive letter
       # that Actions created.
       # See more: https://github.com/stylelint/stylelint/issues/4337
-      - name: Lint and Test (Windows)
+      - name: Test and Lint (Windows)
         if: matrix.os == 'windows-latest'
         run: |
           cd ..
           cd D:\a\stylelint-scales\stylelint-scales
-          npm run lint
           npm test -- --ci
-      - name: Lint and Test (Unix)
+          npm run lint
+      - name: Test and Lint (Unix)
         if: matrix.os != 'windows-latest'
         run: |
-          npm run lint
           npm test -- --ci
+          npm run lint
