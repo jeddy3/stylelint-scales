@@ -2,6 +2,9 @@ name: node-ci
 
 on: [push]
 
+env:
+  CI: true
+
 jobs:
   test:
     name: Test on node ${{ matrix.node-version }} and ${{ matrix.os }}
@@ -25,6 +28,7 @@ jobs:
       - name: npm install
         run: |
           npm install
+
       # Windows environment currently has random case drive letter
       # that Actions created.
       # See more: https://github.com/stylelint/stylelint/issues/4337
@@ -35,12 +39,8 @@ jobs:
           cd D:\a\stylelint-scales\stylelint-scales
           npm run lint
           npm test -- --ci
-        env:
-          CI: true
       - name: Lint and Test (Unix)
         if: matrix.os != 'windows-latest'
         run: |
           npm run lint
           npm test -- --ci
-        env:
-          CI: true
