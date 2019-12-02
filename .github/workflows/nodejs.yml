@@ -29,12 +29,9 @@ jobs:
         run: |
           npm install
 
-      - name: Test (Windows)
-        if: matrix.os == 'windows-latest'
-        run: |
-          npm test -- --ci
-      - name: Lint and Test (Unix)
-        if: matrix.os != 'windows-latest'
-        run: |
-          npm run lint
-          npm test -- --ci
+      - name: Lint (Unix only)
+        if: matrix.os == 'ubuntu-latest'
+        run: npm run lint
+
+      - name: Test
+        run: npm test -- --ci
