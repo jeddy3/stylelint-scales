@@ -19,7 +19,10 @@ This rule assumes rgb(a) colors.
 Given:
 
 ```json
-[[0, 0, 0], [255, 255, 255]]
+[
+  [0, 0, 0],
+  [255, 255, 255]
+]
 ```
 
 The following patterns are considered violations:
