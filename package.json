@@ -26,7 +26,7 @@
     "test": "jest",
     "lint": "npm-run-all --parallel lint:*",
     "lint:js": "eslint \"**/*.js\"",
-    "lint:formating": "prettier \"**/*.{js,md}\" --check",
+    "lint:formating": "prettier \"**/*.{js,md}\" --debug-check",
     "fix": "npm-run-all --sequential fix:*",
     "fix:js": "eslint \"**/*.js\" --fix",
     "fix:formating": "prettier \"**/*.{js,md}\" --write",
