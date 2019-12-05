@@ -2,6 +2,9 @@ name: node-ci
 
 on: [push]
 
+env:
+  CI: true
+
 jobs:
   test:
     name: Test on node ${{ matrix.node-version }} and ${{ matrix.os }}
@@ -22,10 +25,13 @@ jobs:
       - name: Install latest npm
         run: npm install --global npm@latest
 
-      - name: npm install, lint and test
+      - name: npm install
         run: |
           npm install
-          npm run lint
-          npm test -- --ci
-        env:
-          CI: true
+
+      - name: Lint (Unix only)
+        if: matrix.os == 'ubuntu-latest'
+        run: npm run lint
+
+      - name: Test
+        run: npm test -- --ci
