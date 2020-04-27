@@ -2,6 +2,8 @@
 
 # Unreleased
 
+- Handle font `inherit` values.
+
 ## Changed
 
 - Border width rule no longer checks against `none` value.
