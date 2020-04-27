@@ -10,7 +10,7 @@ a {
  *             This font-family */
 ```
 
-This rule validates all found fonts declared, and allows `inherit` as a value.
+This rule validates all found fonts declared, and allows css global keywords (`inherit`, `initial`, `unset`) as values.
 
 ## Options
 
