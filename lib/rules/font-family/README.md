@@ -10,7 +10,7 @@ a {
  *             This font-family */
 ```
 
-This rule validates all found fonts declared.
+This rule validates all found fonts declared, and allows `inherit` as a value.
 
 ## Options
 
@@ -53,5 +53,11 @@ a {
 ```css
 a {
   font: 700 1rem/1 "Times New Roman", Times, serif;
+}
+```
+
+```css
+a {
+  font: inherit;
 }
 ```
