@@ -2,6 +2,8 @@
 
 # Unreleased
 
+- Support non-numerical font-weights.
+
 ## Changed
 
 - Border width rule no longer checks against `none` value.
