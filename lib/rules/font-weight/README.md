@@ -19,7 +19,7 @@ This rule assumes numeric font-weights.
 Given:
 
 ```json
-[400, 700]
+[400, 700, "bold"]
 ```
 
 The following patterns are considered violations:
@@ -41,6 +41,12 @@ The following patterns are _not_ considered violations:
 ```css
 a {
   font-weight: 400;
+}
+```
+
+```css
+a {
+  font-weight: bold;
 }
 ```
 
