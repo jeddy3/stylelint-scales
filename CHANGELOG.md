@@ -2,6 +2,8 @@
 
 # Unreleased
 
+- Handles CSS global keywords in font shorthand declarations.
+
 ## Changed
 
 - Border width rule no longer checks against `none` value.
