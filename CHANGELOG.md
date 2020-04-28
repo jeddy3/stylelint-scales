@@ -2,7 +2,7 @@
 
 # Unreleased
 
-- Handle font `inherit` values.
+- Handles CSS global keywords in font shorthand declarations.
 
 ## Changed
 
