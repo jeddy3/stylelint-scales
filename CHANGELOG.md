@@ -1,12 +1,12 @@
 # Changelog
 
-# Unreleased
-
-- Support non-numerical font-weights.
+# UNRELEASED
 
 ## Changed
 
 - Border width rule no longer checks against `none` value.
+- Support non-numerical font-weights.
+- Handles CSS global keywords in font shorthand declarations.
 
 # 1.2.0
 
