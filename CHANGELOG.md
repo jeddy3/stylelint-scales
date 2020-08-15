@@ -1,6 +1,6 @@
 # Changelog
 
-# Unreleased
+# 1.4.0
 
 - Adds correct unit display in messages for all relevant rules.
 
