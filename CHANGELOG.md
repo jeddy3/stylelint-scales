@@ -1,6 +1,15 @@
 # Changelog
 
+# 1.5.0
+
+## Changed
+
+- Updates project dependencies.
+- Project no longer supports Node 8. Node 10+ supported.
+
 # 1.4.0
+
+## Changed
 
 - Adds correct unit display in messages for all relevant rules.
 
