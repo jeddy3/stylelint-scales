@@ -16,6 +16,8 @@ This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-rel
 
 `array`
 
+Array of numbers or an array of objects as `{units: [], scale: []}`
+
 Given:
 
 ```json
@@ -41,6 +43,49 @@ The following patterns are _not_ considered violations:
 ```css
 a {
   margin: 16rem;
+}
+```
+
+```css
+a {
+  grid-gap: 32px;
+}
+```
+
+Given:
+
+```json
+[
+  { "units": ["em", "rem"], "scale": [1, 2] },
+  { "units": ["px"], "scale": [16, 32] }
+]
+```
+
+The following patterns are considered violations:
+
+```css
+a {
+  margin: 16rem;
+}
+```
+
+```css
+a {
+  margin: 2px;
+}
+```
+
+The following patterns are _not_ considered violations:
+
+```css
+a {
+  margin: 1em;
+}
+```
+
+```css
+a {
+  margin: 2rem;
 }
 ```
 
