@@ -5,6 +5,7 @@
 ## Added
 
 - support for per unit scales to `font-size` and `space`
+- support for unenclosed array primary options
 
 # 1.5.0
 
