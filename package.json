@@ -4,14 +4,7 @@
   "version": "1.5.0",
   "license": "MIT",
   "main": "lib/index.js",
-  "homepage": "https://github.com/signal-noise/stylelint-scales#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/signal-noise/stylelint-scales.git"
-  },
-  "bugs": {
-    "url": "https://github.com/signal-noise/stylelint-scales/issues"
-  },
+  "repository": "signal-noise/stylelint-scales",
   "keywords": [
     "stylelint",
     "stylelint-plugin",
