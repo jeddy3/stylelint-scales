@@ -2,6 +2,10 @@
 
 # Unreleased
 
+## Changed
+
+- rules now check logical properties and shorthand gap
+
 ## Added
 
 - support for per unit scales to `font-size` and `space`
