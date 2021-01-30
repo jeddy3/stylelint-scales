@@ -1,3 +1,4 @@
 module.exports = {
-  setupFiles: ["<rootDir>/jest-setup.js"],
+  preset: "jest-preset-stylelint",
+  setupFiles: ["./jest.setup.js"],
 };
