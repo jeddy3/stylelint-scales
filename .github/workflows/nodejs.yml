@@ -29,9 +29,9 @@ jobs:
         run: |
           npm install
 
-      - name: Lint (Unix only)
+      - name: Check (Unix only)
         if: matrix.os == 'ubuntu-latest'
-        run: npm run lint
+        run: npm run check
 
       - name: Test
         run: npm test -- --ci

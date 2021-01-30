@@ -21,12 +21,12 @@
   ],
   "scripts": {
     "test": "jest",
-    "lint": "npm-run-all --parallel lint:*",
-    "lint:js": "eslint \"**/*.js\"",
-    "lint:formating": "prettier \"**/*.{js,md}\" --check",
+    "check": "npm-run-all --parallel check:*",
+    "check:js": "eslint \"**/*.js\"",
+    "check:formating": "prettier \"**/*.{js,md,yml}\" --check",
     "fix": "npm-run-all --sequential fix:*",
     "fix:js": "eslint \"**/*.js\" --fix",
-    "fix:formating": "prettier \"**/*.{js,md}\" --write",
+    "fix:formating": "prettier \"**/*.{js,md,yml}\" --write",
     "release": "np"
   },
   "dependencies": {
