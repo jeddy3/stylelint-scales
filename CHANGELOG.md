@@ -1,5 +1,11 @@
 # Changelog
 
+# Unreleased
+
+## Added
+
+- support for per unit scales to `font-size` and `space`
+
 # 1.5.0
 
 ## Changed

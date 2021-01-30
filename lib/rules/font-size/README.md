@@ -16,13 +16,12 @@ This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-rel
 
 `array`
 
+Array of numbers or an array of objects as `{units: [], scale: []}`
+
 Given:
 
 ```json
-{
-  "scale": [1, 1.5],
-  "units": ["px", "rem"]
-}
+[1, 1.5]
 ```
 
 The following patterns are considered violations:
@@ -39,9 +38,40 @@ a {
 }
 ```
 
+The following patterns are _not_ considered violations:
+
 ```css
 a {
-  font-size: 1em;
+  font-size: 1rem;
+}
+```
+
+```css
+a {
+  font: 1.5px/1 serif;
+}
+```
+
+Given:
+
+```json
+[
+  { "units": ["em", "rem"], "scale": [1, 2] },
+  { "units": ["px"], "scale": [16, 32] }
+]
+```
+
+The following patterns are considered violations:
+
+```css
+a {
+  font-size: 16rem;
+}
+```
+
+```css
+a {
+  font: 2px/1 serif;
 }
 ```
 
@@ -55,7 +85,7 @@ a {
 
 ```css
 a {
-  font: 1.5px/1 serif;
+  font: 16px/1 serif;
 }
 ```
 
