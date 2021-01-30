@@ -9,5 +9,5 @@
 
 - `npm test -- --watch` to start interactive test prompt
 - `npm test` to run tests
-- `npm run lint` to run lint checks
-- `npm run fix` to fix lint violations
+- `npm run check` to run checks
+- `npm run fix` to fix check violations
