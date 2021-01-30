@@ -8,24 +8,26 @@
 
 # 1.5.0
 
-## Changed
+## Removed
 
-- Updates project dependencies.
-- Project no longer supports Node 8. Node 10+ supported.
+- support for Node 8
 
 # 1.4.0
 
-## Changed
+## Added
 
-- Adds correct unit display in messages for all relevant rules.
+- unit display in messages for all relevant rules
 
 # 1.3.0
 
-## Changed
+## Added
 
-- Border width rule no longer checks against `none` value.
-- Support non-numerical font-weights.
-- Handles CSS global keywords in font shorthand declarations.
+- support non-numerical font-weights
+
+## Fixed
+
+- false positives for CSS global keywords in font shorthand declarations
+- `border-width` false positives for `none` value
 
 # 1.2.0
 
@@ -33,14 +35,11 @@
 
 - `z-indices` rule
 - `border-width` rule
-
-## Changed
-
-- added `unit` option on unit dependent scales
+- `unit` option on unit dependent scales
 
 # 1.1.1
 
-## Changed
+## Fixed
 
 - missing `sizes` documentation link
 
@@ -78,4 +77,4 @@
 
 # 0.1.0
 
-- Initial release
+- initial release
