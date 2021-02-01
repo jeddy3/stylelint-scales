@@ -1,6 +1,6 @@
 # sizes
 
-Specify a scale for (min-, max-) width and height.
+Specify scales for sizes.
 
 ```css
 a {
@@ -10,60 +10,42 @@ a {
  *       This size */
 ```
 
-This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-relative-lengths), [viewport-percentage](https://drafts.csswg.org/css-values-4/#viewport-relative-lengths) and [absolute](https://drafts.csswg.org/css-values-4/#absolute-lengths) lengths.
+This rule can automatically fix all of the problems reported.
+
+This rule checks `<length>` and `<percentage>` values.
+
+This rule can be paired with the [`declaration-property-unit-allowed-list`](https://stylelint.io/user-guide/rules/declaration-property-unit-allowed-list) rule in stylelint, using the RegEx:
+
+```
+/^((min|max)-)?(height$|width$|block-size$|inline-size$)/
+```
 
 ## Options
 
-`array`
+`array` of `objects` as `{scale: [], units: []}`
 
 Given:
 
 ```json
-{
-  "scale": [100, 150],
-  "units": ["px", "vw"]
-}
+[
+  {
+    "scale": [100, 150],
+    "units": ["px"]
+  }
+]
 ```
 
 The following patterns are considered violations:
 
 ```css
 a {
-  max-width: 125px;
+  width: 125px;
 }
 ```
 
 ```css
 a {
-  height: 200rem;
-}
-```
-
-The following patterns are _not_ considered violations:
-
-```css
-a {
-  width: 100vw;
-}
-```
-
-```css
-a {
-  min-height: 150px;
-}
-```
-
-## Optional secondary options
-
-### `unit: string`
-
-For example with `"px"`:
-
-The following pattern is considered a violation:
-
-```css
-a {
-  width: 100vw;
+  max-height: 200px;
 }
 ```
 
@@ -71,6 +53,12 @@ The following patterns are _not_ considered violations:
 
 ```css
 a {
-  min-height: 150px;
+  width: 100px;
+}
+```
+
+```css
+a {
+  max-height: 150px;
 }
 ```

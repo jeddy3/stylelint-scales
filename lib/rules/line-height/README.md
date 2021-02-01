@@ -7,10 +7,14 @@ a {
   line-height: 1;
 }
 /**            ↑
- *             This size */
+ *             This line-height */
 ```
 
-This rule assumes unitless line-heights.
+This rule can automatically fix all of the problems reported.
+
+This rule checks unitless line-heights.
+
+This rule can be paired with the [`declaration-property-unit-allowed-list`](https://stylelint.io/user-guide/rules/declaration-property-unit-allowed-list) rule in stylelint.
 
 ## Options
 
