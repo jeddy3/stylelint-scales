@@ -1,6 +1,6 @@
-# font-weight
+# font-weights
 
-Specify a scale for font-weights.
+Specify a scale for font weights.
 
 ```css
 a {
@@ -12,7 +12,7 @@ a {
 
 This rule can automatically fix all of the problems reported.
 
-This rule checks numeric font-weights.
+This rule checks numeric font weights.
 
 Numeric font-weights can be enforced using the [`font-weight-notation`](https://stylelint.io/user-guide/rules/font-weight-notation) rule in stylelint.
 

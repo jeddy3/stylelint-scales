@@ -8,6 +8,7 @@
 
 ## Changed
 
+- names to be consistently pluralised
 - options signature for rules that check values with units
 - rules now check logical properties and shorthand gap
 

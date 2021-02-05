@@ -1,6 +1,6 @@
-# border-width
+# border-widths
 
-Specify scales for border-width.
+Specify scales for border widths.
 
 ```css
 a {

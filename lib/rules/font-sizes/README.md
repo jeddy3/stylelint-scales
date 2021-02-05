@@ -1,6 +1,6 @@
-# font-size
+# font-sizes
 
-Specify scales for font-sizes.
+Specify scales for font sizes.
 
 ```css
 a {
