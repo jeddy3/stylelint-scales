@@ -7,8 +7,10 @@ a {
   z-index: 1;
 }
 /**        ↑
- *         This z-order */
+ *         This z-index */
 ```
+
+This rule can automatically fix all of the problems reported.
 
 ## Options
 

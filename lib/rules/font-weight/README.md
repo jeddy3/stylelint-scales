@@ -10,7 +10,11 @@ a {
  *             This weight */
 ```
 
-This rule assumes numeric font-weights.
+This rule can automatically fix all of the problems reported.
+
+This rule checks numeric font-weights.
+
+Numeric font-weights can be enforced using the [`font-weight-notation`](https://stylelint.io/user-guide/rules/font-weight-notation) rule in stylelint.
 
 ## Options
 
@@ -19,7 +23,7 @@ This rule assumes numeric font-weights.
 Given:
 
 ```json
-[400, 700, "bold"]
+[400, 700]
 ```
 
 The following patterns are considered violations:
@@ -41,12 +45,6 @@ The following patterns are _not_ considered violations:
 ```css
 a {
   font-weight: 400;
-}
-```
-
-```css
-a {
-  font-weight: bold;
 }
 ```
 

@@ -4,11 +4,13 @@
 
 ## Changed
 
+- options signature for rules that check values with units
 - rules now check logical properties and shorthand gap
 
 ## Added
 
-- support for per unit scales to `font-size` and `space`
+- autofix to rules that check numeric scales
+- per unit scales for rules that check values with units
 - support for unenclosed array primary options
 
 # 1.5.0

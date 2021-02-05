@@ -1,6 +1,6 @@
 # font-size
 
-Specify a scale for font-sizes.
+Specify scales for font-sizes.
 
 ```css
 a {
@@ -10,54 +10,26 @@ a {
  *           This size */
 ```
 
-This rule checks [font-relative](https://drafts.csswg.org/css-values-4/#font-relative-lengths) and [absolute](https://drafts.csswg.org/css-values-4/#absolute-lengths) lengths.
+This rule can automatically fix all of the problems reported.
+
+This rule checks `<length>` and `<percentage>` values.
+
+This rule can be paired with the [`declaration-property-unit-allowed-list`](https://stylelint.io/user-guide/rules/declaration-property-unit-allowed-list) rule in stylelint, using the RegEx:
+
+```
+/^font-size$|^font$/
+```
 
 ## Options
 
-`array`
-
-Array of numbers or an array of objects as `{units: [], scale: []}`
-
-Given:
-
-```json
-[1, 1.5]
-```
-
-The following patterns are considered violations:
-
-```css
-a {
-  font-size: 2rem;
-}
-```
-
-```css
-a {
-  font: 2px/1 serif;
-}
-```
-
-The following patterns are _not_ considered violations:
-
-```css
-a {
-  font-size: 1rem;
-}
-```
-
-```css
-a {
-  font: 1.5px/1 serif;
-}
-```
+`array` of `objects` as `{scale: [], units: []}`
 
 Given:
 
 ```json
 [
-  { "units": ["em", "rem"], "scale": [1, 2] },
-  { "units": ["px"], "scale": [16, 32] }
+  { "scale": [1, 2], "units": ["em", "rem"] },
+  { "scale": [16, 32], "units": ["px"] }
 ]
 ```
 
@@ -86,27 +58,5 @@ a {
 ```css
 a {
   font: 16px/1 serif;
-}
-```
-
-## Optional secondary options
-
-### `unit: string`
-
-For example with `"px"`:
-
-The following pattern is considered a violation:
-
-```css
-a {
-  font-size: 1rem;
-}
-```
-
-The following patterns are _not_ considered violations:
-
-```css
-a {
-  font-size: 1px;
 }
 ```
