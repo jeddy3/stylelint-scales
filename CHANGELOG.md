@@ -9,6 +9,7 @@
 
 ## Added
 
+- `alpha-values` rule
 - autofix to rules that check numeric scales
 - per unit scales for rules that check values with units
 - support for unenclosed array primary options

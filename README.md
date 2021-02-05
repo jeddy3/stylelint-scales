@@ -20,13 +20,29 @@ Like so:
 {
   "plugins": ["@signal-noise/stylelint-scales"],
   "rules": {
+    "scales/alpha-values": [80, 90],
+    "scales/border-width": [{ "scale": [1, 2], "units": ["px"] }],
+    "scale/font-family": ["system-ui"],
     "scales/font-size": [
       { "scale": [1, 1.5, 2], "units": ["em", "rem"] },
       { "scale": [12, 14, 16], "units": ["px"] }
     ],
     "scales/font-weight": [400, 600],
-    "scales/radii": [{ "scale": [2, 4], "units": ["px"] }]
+    "scales/line-height": [1, 1.5],
+    "scales/radii": [{ "scale": [2, 4], "units": ["px"] }],
+    "scales/space": [{ "scale": [0.5, 1, 2, 4], "units": ["rem"] }]
   }
+}
+```
+
+To enforce this:
+
+```css
+p {
+  border: 1px solid hsl(var(--accent) / 90%));
+  border-radius: 2px;
+  font: 400 1rem/1.5 system-ui;
+  margin-block: 2rem;
 }
 ```
 
@@ -34,6 +50,7 @@ This plugin can automatically fix all the numeric scales.
 
 ## List of rules
 
+- [`alpha-values`](./lib/rules/alpha-values/README.md): Specify a scale for alpha values (Autofixable).
 - [`border-width`](./lib/rules/border-width/README.md): Specify a scale for border-width (Autofixable).
 - [`color`](./lib/rules/color/README.md): Specify a scale for color.
 - [`font-family`](./lib/rules/font-family/README.md): Specify a scale for font-family.
