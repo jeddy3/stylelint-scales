@@ -2,6 +2,10 @@
 
 # Unreleased
 
+## Removed
+
+- `color` rule
+
 ## Changed
 
 - options signature for rules that check values with units
