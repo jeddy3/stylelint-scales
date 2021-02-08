@@ -21,14 +21,14 @@ Like so:
   "plugins": ["@signal-noise/stylelint-scales"],
   "rules": {
     "scales/alpha-values": [80, 90],
-    "scales/border-width": [{ "scale": [1, 2], "units": ["px"] }],
-    "scale/font-family": ["system-ui"],
-    "scales/font-size": [
+    "scales/border-widths": [{ "scale": [1, 2], "units": ["px"] }],
+    "scales/font-families": ["system-ui"],
+    "scales/font-sizes": [
       { "scale": [1, 1.5, 2], "units": ["em", "rem"] },
       { "scale": [12, 14, 16], "units": ["px"] }
     ],
-    "scales/font-weight": [400, 600],
-    "scales/line-height": [1, 1.5],
+    "scales/font-weights": [400, 600],
+    "scales/line-heights": [1, 1.5],
     "scales/radii": [{ "scale": [2, 4], "units": ["px"] }],
     "scales/space": [{ "scale": [0.5, 1, 2, 4], "units": ["rem"] }]
   }
