@@ -35,7 +35,6 @@ This plugin can automatically fix all the numeric scales.
 ## List of rules
 
 - [`border-width`](./lib/rules/border-width/README.md): Specify a scale for border-width (Autofixable).
-- [`color`](./lib/rules/color/README.md): Specify a scale for color.
 - [`font-family`](./lib/rules/font-family/README.md): Specify a scale for font-family.
 - [`font-size`](./lib/rules/font-size/README.md): Specify a scale for font-size (Autofixable).
 - [`font-weight`](./lib/rules/font-weight/README.md): Specify a scale for font-weight (Autofixable).
@@ -67,6 +66,6 @@ You can then pick the next value on the scale and be confident that it'll be con
 While you can achieve something similar with variables, with this plugin you:
 
 1. **Enforce code and design consistency with one mechanism**. You probably already use stylelint for code consistency, for example using the [`unit-allowed-list`](https://stylelint.io/user-guide/rules/unit-allowed-list) to enforce consistent units. By using this plugin, you avoid adding a second mechanism (variables) to ensure design consistency. Additionally, you'll need to enforce the use of variables with linting anyway to avoid relying on developer discipline.
-2. **Avoid the cognitive load of abstracted variable names**. You can write explicit values, and the plugin will automatically fix it to the closest value on the corresponding scale.
+2. **Avoid the cognitive load of abstracted variable names**. You can write explicit values, and the plugin will automatically fix it to the closest value on the corresponding scale. The exception to this are colours, which benefit from human-readable names.
 3. **Can use the same approach across projects**. The plugin is agnostic of the styling technology, whether that's styled-components, SCSS or vanilla CSS.
 4. **Remove the need to translate values from design tools into variables**. You can copy and paste code from design tools like Figma and Sketch without alteration.
