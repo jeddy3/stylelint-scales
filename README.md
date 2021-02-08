@@ -51,16 +51,16 @@ This plugin can automatically fix all the numeric scales.
 ## List of rules
 
 - [`alpha-values`](./lib/rules/alpha-values/README.md): Specify a scale for alpha values (Autofixable).
-- [`border-width`](./lib/rules/border-width/README.md): Specify a scale for border-width (Autofixable).
-- [`font-family`](./lib/rules/font-family/README.md): Specify a scale for font-family.
-- [`font-size`](./lib/rules/font-size/README.md): Specify a scale for font-size (Autofixable).
-- [`font-weight`](./lib/rules/font-weight/README.md): Specify a scale for font-weight (Autofixable).
-- [`letter-spacing`](./lib/rules/letter-spacing/README.md): Specify a scale for letter-spacing (Autofixable).
-- [`line-height`](./lib/rules/line-height/README.md): Specify a scale for line-height (Autofixable).
+- [`border-widths`](./lib/rules/border-widths/README.md): Specify a scale for border widths (Autofixable).
+- [`font-families`](./lib/rules/font-families/README.md): Specify a scale for font families.
+- [`font-sizes`](./lib/rules/font-sizes/README.md): Specify a scale for font sizes (Autofixable).
+- [`font-weights`](./lib/rules/font-weights/README.md): Specify a scale for font weights (Autofixable).
+- [`letter-spacings`](./lib/rules/letter-spacings/README.md): Specify a scale for letter spacings (Autofixable).
+- [`line-heights`](./lib/rules/line-heights/README.md): Specify a scale for line heights (Autofixable).
 - [`radii`](./lib/rules/radii/README.md): Specify a scale for radii (Autofixable).
 - [`sizes`](./lib/rules/sizes/README.md): Specify a scale for sizes (Autofixable).
 - [`space`](./lib/rules/space/README.md): Specify a scale for space (Autofixable).
-- [`word-spacing`](./lib/rules/word-spacing/README.md): Specify a scale for word-spacing (Autofixable).
+- [`word-spacings`](./lib/rules/word-spacings/README.md): Specify a scale for word spacings (Autofixable).
 - [`z-indices`](./lib/rules/z-indices/README.md): Specify a scale for z-indices (Autofixable).
 
 Ref: [Styled System Keys Reference](https://styled-system.com/theme-specification#key-reference)

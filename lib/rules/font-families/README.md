@@ -1,6 +1,6 @@
-# font-family
+# font-families
 
-Specify a scale for font-family.
+Specify a scale for font families.
 
 ```css
 a {
