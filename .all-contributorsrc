@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "jeddy3",
+      "name": "Richard Hallows",
+      "avatar_url": "https://avatars.githubusercontent.com/u/808227?v=4",
+      "profile": "http://richardhallows.com",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "stylelint-scales",
+  "projectOwner": "signal-noise",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
