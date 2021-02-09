@@ -13,6 +13,12 @@ e.g. "We need to enforce the use of a particular unit for all scales."
 
 e.g. "A change to all rules that..."
 
+> Please request the `all-contributors` bot add you to the repo README as well, and thanks for helping out.
+<!-- 
+Using syntax such as 
+@all-contributors please add @username for ideas
+-->
+
 <!--
 Before posting, please check that the feature hasn't already been:
 1. added in the next release (https://github.com/@signal-noise/stylelint-scales/blob/master/CHANGELOG.md)
