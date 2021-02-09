@@ -64,6 +64,12 @@ test.css
 2:4    Expected "11.50" to be one of "10, 11.5, 14" (scales/font-size)
 ```
 
+> Please request the `all-contributors` bot add you to the repo README as well, and thanks for helping out.
+<!-- 
+Using syntax such as 
+@all-contributors please add @username for bugs
+-->
+
 <!--
 Before posting, please check that the bug hasn't already been:
 1. fixed in the next release (https://github.com/@signal-noise/stylelint-scales/blob/master/CHANGELOG.md)
@@ -75,5 +81,4 @@ You can help us fix the bug more quickly by:
 1. Figuring out what needs to be done and proposing it
 2. Submitting a PR with failing tests.
 
-Once the bug has been confirmed, you can help out further by:
-1. Writing the code and submitting a PR.
+Once the bug has been confirmed, you can help out further by writing the code to fix it, updating any tests, and submitting a PR :D
