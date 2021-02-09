@@ -14,8 +14,9 @@ e.g. "We need to enforce the use of a particular unit for all scales."
 e.g. "A change to all rules that..."
 
 > Please request the `all-contributors` bot add you to the repo README as well, and thanks for helping out.
-<!-- 
-Using syntax such as 
+
+<!--
+Using syntax such as
 @all-contributors please add @username for ideas
 -->
 

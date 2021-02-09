@@ -65,8 +65,9 @@ test.css
 ```
 
 > Please request the `all-contributors` bot add you to the repo README as well, and thanks for helping out.
-<!-- 
-Using syntax such as 
+
+<!--
+Using syntax such as
 @all-contributors please add @username for bugs
 -->
 
