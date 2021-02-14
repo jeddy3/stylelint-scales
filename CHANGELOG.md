@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Fixed
+
+- parse error for custom properties in `font-families`
+
 ## 2.0.0
 
 ### Migrating from 1.5.0
