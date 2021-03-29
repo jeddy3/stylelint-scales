@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Fixed
+
+- type error for system keywords in `font-families`
+
 ## 2.0.1
 
 ### Fixed
