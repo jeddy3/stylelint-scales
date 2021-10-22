@@ -1,7 +1,7 @@
 {
   "name": "@signal-noise/stylelint-scales",
   "description": "A plugin pack to enforce scales within Stylelint",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "license": "MIT",
   "main": "lib/index.js",
   "files": [
