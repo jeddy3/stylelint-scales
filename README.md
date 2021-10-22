@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/@signal-noise/stylelint-scales.svg)](https://www.npmjs.com/package/@signal-noise/stylelint-scales) [![Actions Status](https://github.com/signal-noise/stylelint-scales/workflows/node-ci/badge.svg)](https://github.com/signal-noise/stylelint-scales/actions) [![NPM Downloads](https://img.shields.io/npm/dm/@signal-noise/stylelint-scales.svg)](https://npmcharts.com/compare/@signal-noise/stylelint-scales?minimal=true) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section --> [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors)<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-A [stylelint](https://stylelint.io) plugin pack of rules for enforcing scales.
+A [Stylelint](https://stylelint.io) plugin pack of rules for enforcing scales.
 
 ## Installation
 
@@ -12,7 +12,7 @@ npm install @signal-noise/stylelint-scales --save-dev
 
 ## Usage
 
-Add `stylelint-scales` to your stylelint config plugins array, then add the rules you need to the rules list. All rules from `stylelint-scales` need to be namespaced with `scales`.
+Add `stylelint-scales` to your Stylelint config plugins array, then add the rules you need to the rules list. All rules from `stylelint-scales` need to be namespaced with `scales`.
 
 Like so:
 
@@ -82,7 +82,7 @@ You can then pick the next value on the scale and be confident that it'll be con
 
 While you can achieve something similar with variables, with this plugin you:
 
-1. **Enforce code and design consistency with one mechanism**. You probably already use stylelint for code consistency, for example using the [`unit-allowed-list`](https://stylelint.io/user-guide/rules/unit-allowed-list) to enforce consistent units. By using this plugin, you avoid adding a second mechanism (variables) to ensure design consistency. Additionally, you'll need to enforce the use of variables with linting anyway to avoid relying on developer discipline.
+1. **Enforce code and design consistency with one mechanism**. You probably already use Stylelint for code consistency, for example using the [`unit-allowed-list`](https://stylelint.io/user-guide/rules/unit-allowed-list) to enforce consistent units. By using this plugin, you avoid adding a second mechanism (variables) to ensure design consistency. Additionally, you'll need to enforce the use of variables with linting anyway to avoid relying on developer discipline.
 2. **Avoid the cognitive load of abstracted variable names**. You can write explicit values, and the plugin will automatically fix it to the closest value on the corresponding scale. The exception to this are colours, which benefit from human-readable names.
 3. **Can use the same approach across projects**. The plugin is agnostic of the styling technology, whether that's styled-components, SCSS or vanilla CSS.
 4. **Remove the need to translate values from design tools into variables**. You can copy and paste code from design tools like Figma and Sketch without alteration.
