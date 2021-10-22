@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.3
+
+### Fixed
+
+- `stylelint@14` compatibility
+
 ## 2.0.2
 
 ### Fixed
