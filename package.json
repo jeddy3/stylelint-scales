@@ -1,6 +1,6 @@
 {
   "name": "@signal-noise/stylelint-scales",
-  "description": "A plugin pack to enforce scales within Stylelint",
+  "description": "A Stylelint plugin pack to enforce numeric scales",
   "version": "2.0.3",
   "license": "MIT",
   "main": "lib/index.js",
@@ -30,9 +30,6 @@
     "release": "np"
   },
   "dependencies": {
-    "css-global-keywords": "^1.0.1",
-    "font-family": "^0.2.0",
-    "parse-css-font": "^4.0.0",
     "postcss-values-parser": "^6.0.2"
   },
   "devDependencies": {
