@@ -1,5 +1,15 @@
 # Changelog
 
+## Head
+
+### Migrating from 2.0.3
+
+The `font-families` rule has been removed so that the pack is for autofixable numeric scales. You should remove the rule from your config.
+
+### Removed
+
+- `font-families` rule
+
 ## 2.0.3
 
 ### Fixed
