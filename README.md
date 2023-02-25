@@ -23,8 +23,15 @@ Like so:
     "scales/alpha-values": [80, 90],
     "scales/border-widths": [{ "scale": [1, 2], "units": ["px"] }],
     "scales/font-sizes": [
-      { "scale": [1, 1.5, 2], "units": ["em", "rem"] },
-      { "scale": [12, 14, 16], "units": ["px"] }
+      [
+        { "scale": [1, 1.5, 2], "units": ["em", "rem"] },
+        { "scale": [12, 14, 16], "units": ["px"] }
+      ],
+      {
+        "ignoreFunctionArguments": {
+          "clamp": [1]
+        }
+      }
     ],
     "scales/font-weights": [400, 600],
     "scales/line-heights": [1, 1.5],
@@ -40,7 +47,7 @@ To enforce this:
 p {
   border: 1px solid hsl(var(--accent) / 90%));
   border-radius: 2px;
-  font-size: 1rem;
+  font-size: clamp(1rem, 0.23rem + 1.5vw, 12px);
   font-weight: 400;
   line-height: 1.5;
   margin-block: 2rem;
