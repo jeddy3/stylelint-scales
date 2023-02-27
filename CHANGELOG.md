@@ -4,11 +4,47 @@
 
 ### Migrating from 2.0.3
 
-The `font-families` rule has been removed so that the pack is for autofixable numeric scales. You should remove the rule from your config.
+The package name as been unscoped to `stylelint-scales` and the scoped package has been deprecated.
+
+You should replace the deprecated package:
+
+```
+npm uninstall @signal-noise/stylelint-scales && npm i -D stylelint-scales
+```
+
+```diff json
+{
+- "plugins": ["@signal-noise/stylelint-scales"],
++ "plugins": ["stylelint-scales"],
+  "rules": {
+    "scales/alpha-values": [80, 90]
+    ..
+  }
+}
+```
+
+The `font-families` rule has been removed so that the pack is for autofixable numeric scales. You should remove the rule from your config:
+
+```diff json
+{
+  "rules": {
+-   "scales/font-families": ["sans-serif", "serif"]
+    ..
+  }
+}
+```
 
 ### Removed
 
 - `font-families` rule
+
+### Changed
+
+- Unscoped the package name to `stylelint-scales`
+
+### Added
+
+- `ignoreFunctionArguments: []` option to `font-sizes` rule
 
 ## 2.0.3
 

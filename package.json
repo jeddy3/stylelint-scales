@@ -1,5 +1,5 @@
 {
-  "name": "@signal-noise/stylelint-scales",
+  "name": "stylelint-scales",
   "description": "A Stylelint plugin pack to enforce numeric scales",
   "version": "2.0.3",
   "license": "MIT",
@@ -8,7 +8,7 @@
     "lib",
     "!**/__tests__"
   ],
-  "repository": "signal-noise/stylelint-scales",
+  "repository": "jeddy3/stylelint-scales",
   "keywords": [
     "stylelint",
     "stylelint-plugin",
