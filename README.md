@@ -1,6 +1,6 @@
 # stylelint-scales
 
-[![NPM version](https://img.shields.io/npm/v//stylelint-scales.svg)](https://www.npmjs.com/package//stylelint-scales) [![Actions Status](https://github.com/signal-noise/stylelint-scales/workflows/node-ci/badge.svg)](https://github.com/signal-noise/stylelint-scales/actions) [![NPM Downloads](https://img.shields.io/npm/dm//stylelint-scales.svg)](https://npmcharts.com/compare//stylelint-scales?minimal=true)
+[![NPM version](https://img.shields.io/npm/v/stylelint-scales.svg)](https://www.npmjs.com/package/stylelint-scales) [![Actions Status](https://github.com/jeddy3/stylelint-scales/workflows/node-ci/badge.svg)](https://github.com/jeddy3/stylelint-scales/actions) [![NPM Downloads](https://img.shields.io/npm/dm/stylelint-scales.svg)](https://npmcharts.com/compare/stylelint-scales?minimal=true)
 
 A [Stylelint](https://stylelint.io) plugin pack to enforce numeric scales.
 
