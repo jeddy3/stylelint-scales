@@ -1,13 +1,13 @@
 # stylelint-scales
 
-[![NPM version](https://img.shields.io/npm/v/@signal-noise/stylelint-scales.svg)](https://www.npmjs.com/package/@signal-noise/stylelint-scales) [![Actions Status](https://github.com/signal-noise/stylelint-scales/workflows/node-ci/badge.svg)](https://github.com/signal-noise/stylelint-scales/actions) [![NPM Downloads](https://img.shields.io/npm/dm/@signal-noise/stylelint-scales.svg)](https://npmcharts.com/compare/@signal-noise/stylelint-scales?minimal=true)
+[![NPM version](https://img.shields.io/npm/v//stylelint-scales.svg)](https://www.npmjs.com/package//stylelint-scales) [![Actions Status](https://github.com/signal-noise/stylelint-scales/workflows/node-ci/badge.svg)](https://github.com/signal-noise/stylelint-scales/actions) [![NPM Downloads](https://img.shields.io/npm/dm//stylelint-scales.svg)](https://npmcharts.com/compare//stylelint-scales?minimal=true)
 
 A [Stylelint](https://stylelint.io) plugin pack to enforce numeric scales.
 
 ## Installation
 
 ```
-npm install @signal-noise/stylelint-scales --save-dev
+npm install stylelint-scales --save-dev
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ Like so:
 
 ```json
 {
-  "plugins": ["@signal-noise/stylelint-scales"],
+  "plugins": ["stylelint-scales"],
   "rules": {
     "scales/alpha-values": [80, 90],
     "scales/border-widths": [{ "scale": [1, 2], "units": ["px"] }],
