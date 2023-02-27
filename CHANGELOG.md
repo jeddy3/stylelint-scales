@@ -1,6 +1,6 @@
 # Changelog
 
-## Head
+## 3.0.0
 
 ### Migrating from 2.0.3
 
