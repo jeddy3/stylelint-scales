@@ -68,3 +68,32 @@ a {
   gap: -32px;
 }
 ```
+
+## Optional secondary options
+
+### `ignoreFunctionArguments: { "function-name": [<zero-indexed-args>] }`
+
+Given:
+
+```json
+[
+  [{ "scale": [1, 2], "units": ["rem"] }],
+  {
+    "ignoreFunctionArguments": { "clamp": [1], "min": [0, 1] }
+  }
+]
+```
+
+The following patterns are _not_ considered problems:
+
+```css
+a {
+  gap: clamp(1rem, 0.37rem + 0.45vw, 2rem);
+}
+```
+
+```css
+a {
+  gap: min(3rem, 4rem);
+}
+```
