@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.1.0
+
+### Added
+
+- `ignoreFunctionArguments: []` option to `space` rule
+
 ## 3.0.0
 
 ### Migrating from 2.0.3
