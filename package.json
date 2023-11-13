@@ -19,6 +19,9 @@
     "design-system",
     "type-scale"
   ],
+  "engines": {
+    "node": ">=12"
+  },
   "scripts": {
     "test": "jest",
     "check": "npm-run-all --parallel check:*",
