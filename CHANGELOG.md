@@ -1,5 +1,11 @@
 # Changelog
 
+## Head
+
+### Fixed
+
+- `alpha-values` false positives for `<number>`
+
 ## 3.1.0
 
 ### Added
