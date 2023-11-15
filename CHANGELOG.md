@@ -1,5 +1,11 @@
 # Changelog
 
+## Head
+
+## Removed
+
+- support for Stylelint less than 16.0.0
+
 ## 3.1.1
 
 ### Fixed
