@@ -1,6 +1,6 @@
 # Changelog
 
-## Head
+## 4.0.0
 
 ## Removed
 
