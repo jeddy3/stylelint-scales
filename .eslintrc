@@ -6,7 +6,8 @@
     "jest": true
   },
   "parserOptions": {
-    "ecmaVersion": "latest"
+    "ecmaVersion": "latest",
+    "sourceType": "module"
   },
   "globals": {
     "testRule": true
