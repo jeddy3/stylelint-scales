@@ -1,7 +1,7 @@
 {
   "name": "stylelint-scales",
   "description": "A Stylelint plugin pack to enforce numeric scales",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "license": "MIT",
   "exports": "./lib/index.js",
   "files": [
