@@ -6,6 +6,10 @@
 
 - support for Stylelint less than 16.8.2 to use `fix()` callback for autofix ([@planetmalone](https://github.com/planetmalone))
 
+## Fixed
+
+- npm published files to exclude READMEs and tests
+
 ## 4.0.0
 
 ## Removed
