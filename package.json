@@ -20,9 +20,6 @@
     "design-system",
     "type-scale"
   ],
-  "engines": {
-    "node": ">=18"
-  },
   "scripts": {
     "test": "node --test",
     "check": "npm-run-all --parallel check:*",
@@ -38,11 +35,11 @@
   },
   "devDependencies": {
     "common-tags": "^1.8.2",
-    "eslint": "^9.9.1",
-    "np": "^10.0.7",
-    "npm-run-all2": "^6.2.2",
-    "prettier": "^3.3.3",
-    "stylelint": "^16.9.0",
-    "stylelint-test-rule-node": "^0.3.0"
+    "eslint": "^9.39.2",
+    "np": "^10.2.0",
+    "npm-run-all2": "^8.0.4",
+    "prettier": "^3.7.4",
+    "stylelint": "^16.26.1",
+    "stylelint-test-rule-node": "^0.4.0"
   }
 }
