@@ -53,7 +53,12 @@ jobs:
           cache: npm
 
       - name: Install latest npm
-        run: npm install --global npm@latest
+        run: |
+          current_npm_version=$(npm --version)
+          if [[ ${current_npm_version} == "10.9.7" ]]; then
+            npm install --global "npm@10.9.8"
+          fi
+          npm install --global "npm@latest"
 
       - name: Install dependencies
         run: npm ci
