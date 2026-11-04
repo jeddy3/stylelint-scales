@@ -6,7 +6,9 @@
   "exports": "./lib/index.js",
   "files": [
     "lib/**/*.js",
-    "!lib/**/*.test.js"
+    "!lib/**/*.test.js",
+    "!lib/testUtils/**",
+    "CHANGELOG.md"
   ],
   "type": "module",
   "repository": "jeddy3/stylelint-scales",
@@ -27,19 +29,18 @@
     "check:formating": "prettier \"**/*.{js,md,yml}\" --check",
     "fix": "npm-run-all --sequential fix:*",
     "fix:js": "eslint \"**/*.js\" --fix",
-    "fix:formating": "prettier \"**/*.{js,md,yml}\" --write",
-    "release": "np"
+    "fix:formating": "prettier \"**/*.{js,md,yml}\" --write"
   },
   "dependencies": {
     "postcss-values-parser": "^6.0.2"
   },
   "devDependencies": {
-    "common-tags": "^1.8.2",
-    "eslint": "^9.39.2",
-    "np": "^10.2.0",
-    "npm-run-all2": "^8.0.4",
-    "prettier": "^3.7.4",
-    "stylelint": "^17.0.0",
-    "stylelint-test-rule-node": "^1.0.0"
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "globals": "^17.13.0",
+    "npm-run-all2": "^9.0.4",
+    "prettier": "^3.9.10",
+    "stylelint": "^18.0.0",
+    "stylelint-test-rule-node": "^2.0.0"
   }
 }
