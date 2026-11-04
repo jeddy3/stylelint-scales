@@ -1,5 +1,11 @@
 # Changelog
 
+## 5.0.1
+
+## Fixed
+
+- fix warning positions when digits repeat in a value
+
 ## 5.0.0
 
 ## Removed
