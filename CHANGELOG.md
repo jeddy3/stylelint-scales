@@ -1,10 +1,15 @@
 # Changelog
 
-## 5.0.1
+## 6.0.0
+
+## Removed
+
+- support for Node.js less than 20.19.0
 
 ## Fixed
 
-- fix warning positions when digits repeat in a value
+- warning positions when digits repeat in a value
+- `line-heights` false positive for a keyword line height in the `font` shorthand
 
 ## 5.0.0
 
