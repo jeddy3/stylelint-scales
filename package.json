@@ -32,7 +32,8 @@
     "fix:formating": "prettier \"**/*.{js,md,yml}\" --write"
   },
   "dependencies": {
-    "postcss-values-parser": "^6.0.2"
+    "@csstools/css-parser-algorithms": "^4.0.2",
+    "@csstools/css-tokenizer": "^4.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
